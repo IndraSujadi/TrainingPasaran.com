@@ -17,15 +17,3 @@ myEmitter.addListener('exp',()=>{console.log(`your exp : 5000`);});
 myEmitter.emit('login');
 myEmitter.emit('exp');
 
-// * nyoba bukan class
-// let listenerList = new Map();
-    
-// function addListener (eventName :string, fn: Function){
-//     this.listenerList.set(eventName, fn);
-// }
-
-// function emit (eventName: string) {
-//     console.log(listenerList.get(eventName));
-// }
-
-
