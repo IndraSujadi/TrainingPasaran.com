@@ -31,12 +31,14 @@ class EventEmitter{
 
     emit (eventName: string) {
         let functionList = Array.from(this.eventList.get(eventName).values());
+        // console.log(this.eventList.get(eventName));
         // functionList = Array.from(functionList);
         if(functionList) {
-            for(let id of functionList) {
+            for(let objItem of functionList) {
+                console.log(functionList);
             //    let run =functionList.get(id);
             //    run.method();
-            id.method();
+            objItem.method();
             } 
         } else {
             console.log("Event belum dibuat!");
@@ -53,17 +55,3 @@ let hello = myEmitter.addListener('login',()=>{console.log(`your exp : 5000`);})
 myEmitter.removeListenerById('login', hello);
 // myEmitter.removeListenerById('login', 1);
 myEmitter.emit('login');
-
-
-// * nyoba bukan class
-// let listenerList = new Map();
-    
-// function addListener (eventName :string, fn: Function){
-//     this.listenerList.set(eventName, fn);
-// }
-
-// function emit (eventName: string) {
-//     console.log(listenerList.get(eventName));
-// }
-
-
