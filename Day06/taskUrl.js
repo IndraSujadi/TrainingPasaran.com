@@ -1,7 +1,7 @@
 let text = `
-Hello, please visit my  web page https://myname.com/cool-article/test-ya.html
+Hello, please visit my  web page https://myname.com/cool-article.html
 
-I also like the web page at http://example.com/wadidaw
+I also like the web page at http://example.com
 `;
 
 let regex = /(http|https):\/\/\w+\.[(?!-)a-z]+[\/\w-\.a-zA-Z]+/g;
