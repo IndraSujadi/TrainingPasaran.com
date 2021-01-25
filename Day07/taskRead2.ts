@@ -1,4 +1,4 @@
-// buat versi syncronus
+// buat versi sequential
 
 import { doesNotMatch } from 'assert';
 import * as fs from 'fs';
