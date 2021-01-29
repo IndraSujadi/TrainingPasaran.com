@@ -52,13 +52,7 @@ class App extends Component<Props, State> {
       this.setState({ selectedIndex: newIndex });
     }
 
-    if (event.key === " " && document.activeElement === document.body) {
-      // let { id } = todoItems[index];
-      // this.toggleDone(id);
-
-      let selectedItem = todoItems[index];
-      this.toggleDone(selectedItem.id);
-    }
+ 
   };
 
   toggleDone = (id: string) => {
