@@ -1,0 +1,37 @@
+jika di terminal kita menuliskan jest saja
+
+maka semua file yang ada di dalam folder __tests__ akan otomatis dijalankan
+
+===================================
+
+jest --watch memungkinkan untuk melakukan test secara live,
+jadi jest tetap menyala dan melakukan test untuk setiap testcase yang kita
+ubah secara langsung.
+
+====================================
+Modules = file js yang berisi banyak function.
+
+./ = refers ke current folder
+../ = refers ke parent folder (folder dengan tingkat lebih tinggi)
+
+Babel untuk translate JS baru ke JS lama yg lebih dimengerti
+
+=========================================
+Typeof = akan memberikan hasil berupa "Object" untuk variable non-primitive
+
+jika if(n) {
+	console.log(n);
+}
+jika n = null, emptystring, 0, undefined = false
+
+lexical scope = i can access anything from my parent
+
+=========================================================================
+kita membuat type untuk function ketika 
+sebuah function merupakan sebuah parameter dari sebuah fungsi lain
+
+============================================================================
+insialisasi RegEx
+
+let r = new RegExp('kode regexnya');
+let r = /kode regexnya/;
