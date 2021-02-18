@@ -1,0 +1,29 @@
+<html>
+  <head></head>
+  <body>
+    <form id="form" method="POST" action="/submit">
+      <input id="pName" type="text" name="productName" placeholder="product name" /><br />
+      <input id="price" type="text" name="productPrice" placeholder="price" /><br />
+      <button type="submit">Send</button>
+    </form>
+
+    <script>
+      let form = document.getElementById('form');
+
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        let productName = document.getElementById('pName').value;
+        let productPrice = document.getElementById('price').value;
+        console.log('TODO : Send some JSON using fetch()');
+        fetch('/submit-json', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'x-file-type': '.json',
+          },
+          body: JSON.stringify({ product_name: productName, product_price: productPrice }),
+        });
+      });
+    </script>
+  </body>
+</html>
